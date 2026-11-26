@@ -1262,10 +1262,13 @@ button, input, select, textarea { font: inherit; color: inherit; }
 
 /* ---------- Very wide screens ---------- */
 @media (min-width: 2200px) {
-  :root { --container: 1560px; --text-4xl: clamp(3.4rem, 1.5rem + 2.4vw, 4.5rem); }
+  :root { --container: 1560px; --text-4xl: clamp(3.4rem, 1.5rem + 2.4vw, 4rem); }
   html { font-size: 18px; }
-  .hero-grid { min-height: 70svh; }
-  .hero-media img { min-height: 100%; }
+  .hero-title { max-width: 22ch; }
+  .hero-grid { grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr); }
+  /* Landscape photo on very wide screens; the grid centers the copy beside it */
+  .hero-media { align-self: center; }
+  .hero-media img { height: auto; min-height: 0; aspect-ratio: 4 / 3; object-position: 55% 60%; }
 }
 @media (min-width: 2400px) {
   :root { --container: 1680px; }
