@@ -496,7 +496,7 @@ input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 3px
 .toggle:checked::after { transform: translateX(22px); background: #fff; }
 @media (prefers-reduced-motion: reduce) { .toggle::after { transition: none; } }
 
-.urgent-note:empty { display: none; }
+.urgent-note:empty { padding: 0; border: 0; background: none; min-height: 0; }
 .urgent-note--nojs { display: none; }
 html:not(.js) form:has(#f-urgent:checked) .urgent-note--nojs { display: block; }
 .urgent-note { border-left: 4px solid var(--accent); background: rgba(194, 65, 12, 0.08); padding: 12px 14px; font-family: var(--mono); font-size: 0.875rem; line-height: 1.5; }
@@ -513,7 +513,7 @@ html:not(.js) form:has(#f-urgent:checked) .urgent-note--nojs { display: block; }
 .win input:focus-visible + span { outline: 3px solid var(--focus); outline-offset: 2px; }
 
 .f-submit { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 18px; margin-top: 4px; }
-.form-status:empty { display: none; }
+.form-status:empty { padding: 0; border: 0; background: none; min-height: 0; }
 .form-status { font-family: var(--mono); font-size: 0.9375rem; font-weight: 600; padding: 12px 14px; border: 1.5px solid var(--ink); background: var(--paper-deep); }
 .form-alt { margin-top: 18px; }
 
@@ -571,3 +571,25 @@ html:not(.js) form:has(#f-urgent:checked) .urgent-note--nojs { display: block; }
 /* The preview switcher stylesheet pads every last-of-type body child; only the footer should keep it.
    The :not(#_) raises specificity above that rule. Remove with the switcher at launch. */
 body > .skip:not(#_), body > .preview-bar:not(#_), body > .site-header:not(#_), body > main:not(#_) { padding-bottom: 0; }
+
+/* ---------- Accessibility fixes (WCAG 2.2 AA audit) ---------- */
+:root { --line-text: #1f5a80; }
+.sec-head .label, .gen-notes li::before, .gen-notes a { color: var(--line-text); }
+::placeholder { color: var(--ink-2); opacity: 1; }
+.req { text-transform: none; letter-spacing: 0; color: var(--ink-2); font-weight: 400; }
+@media (max-width: 459px) { .wordmark { min-width: 0; } }
+@media (max-width: 359px) {
+  .wordmark__lic { white-space: normal; }
+  .header-actions .btn--sm { padding: 8px; }
+}
+.skip:focus-visible { outline-color: var(--paper); outline-offset: -5px; }
+@media (forced-colors: active) {
+  .toggle, .toggle::after, .win span { forced-color-adjust: none; }
+  .toggle { background: Canvas; border-color: CanvasText; }
+  .toggle::after { background: CanvasText; }
+  .toggle:checked { background: Highlight; border-color: Highlight; }
+  .toggle:checked::after { background: HighlightText; }
+  .win span { background: Canvas; color: CanvasText; border-color: CanvasText; }
+  .win input:checked + span { background: Highlight; color: HighlightText; border-color: Highlight; }
+  .win input:focus-visible + span { outline-color: CanvasText; }
+}

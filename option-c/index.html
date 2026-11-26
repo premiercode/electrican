@@ -91,7 +91,7 @@
         </div>
 
         <figure class="hero__drawing">
-          <svg class="plot" viewBox="0 0 640 500" role="img" aria-labelledby="oneline-t oneline-d">
+          <svg class="plot" viewBox="0 0 640 500" role="img" aria-labelledby="oneline-t" aria-describedby="oneline-d">
             <title id="oneline-t">One-line diagram of a home's electrical service</title>
             <desc id="oneline-d">Utility service feeds a meter and a 200-amp main panel with a surge protector and ground. Branch circuits run to lighting, GFCI and AFCI outlets, a Level 2 EV charger, and a transfer switch with a standby generator.</desc>
             <g class="ln">
@@ -266,44 +266,44 @@
         <span>Tier</span><span>Condition</span><span>Action</span>
       </div>
 
-      <section class="tier tier--1" aria-labelledby="t1">
+      <section class="tier tier--1">
         <p class="tier__code">T-1</p>
         <h3 id="t1" class="tier__title">Call 911 now and get out</h3>
         <ul class="tier__rows">
-          <li><span class="cond">Smoke, flames or a sounding smoke alarm</span><span class="act">Get out, stay out, call 911.</span></li>
-          <li><span class="cond">A downed or low power line</span><span class="act">Stay away. Keep others and pets away. Call 911, then your utility.</span></li>
+          <li><span class="cond"><span class="sr">If you notice: </span>Smoke, flames or a sounding smoke alarm<span class="sr">.</span></span><span class="act"><span class="sr">What to do: </span>Get out, stay out, call 911.</span></li>
+          <li><span class="cond"><span class="sr">If you notice: </span>A downed or low power line<span class="sr">.</span></span><span class="act"><span class="sr">What to do: </span>Stay away. Keep others and pets away. Call 911, then your utility.</span></li>
         </ul>
         <p class="tier__badge tier__btn">Call 911</p>
       </section>
 
-      <section class="tier tier--2" aria-labelledby="t2">
+      <section class="tier tier--2">
         <p class="tier__code">T-2</p>
         <h3 id="t2" class="tier__title">Stop using it and call a licensed electrician now</h3>
         <ul class="tier__rows">
-          <li><span class="cond">Sparks from an outlet</span><span class="act">Stop using it.</span></li>
-          <li><span class="cond">A burning or rubbery smell from an outlet, switch or appliance</span><span class="act">Stop using it. Call 911 if there is smoke or heat.</span></li>
-          <li><span class="cond">Warm, discolored, cracked or broken outlets or switches</span><span class="act">Stop using them.</span></li>
-          <li><span class="cond">A tingle or shock when you touch an appliance, sink or fixture</span><span class="act">Don't touch it again.</span></li>
+          <li><span class="cond"><span class="sr">If you notice: </span>Sparks from an outlet<span class="sr">.</span></span><span class="act"><span class="sr">What to do: </span>Stop using it.</span></li>
+          <li><span class="cond"><span class="sr">If you notice: </span>A burning or rubbery smell from an outlet, switch or appliance<span class="sr">.</span></span><span class="act"><span class="sr">What to do: </span>Stop using it. Call 911 if there is smoke or heat.</span></li>
+          <li><span class="cond"><span class="sr">If you notice: </span>Warm, discolored, cracked or broken outlets or switches<span class="sr">.</span></span><span class="act"><span class="sr">What to do: </span>Stop using them.</span></li>
+          <li><span class="cond"><span class="sr">If you notice: </span>A tingle or shock when you touch an appliance, sink or fixture<span class="sr">.</span></span><span class="act"><span class="sr">What to do: </span>Don't touch it again.</span></li>
         </ul>
         <!-- PLACEHOLDER: 24/7 emergency line -->
         <a class="btn btn--action tier__btn" href="tel:+14695550132">Call (469) 555-0132 · 24/7 (Sample)</a>
       </section>
 
-      <section class="tier tier--3" aria-labelledby="t3">
+      <section class="tier tier--3">
         <p class="tier__code">T-3</p>
         <h3 id="t3" class="tier__title">Book an electrician soon</h3>
         <ul class="tier__rows">
-          <li><span class="cond">Flickering or dimming lights</span><span class="act">Book a visit.</span></li>
-          <li><span class="cond">A breaker that trips again and again</span><span class="act">Find out why before resetting it again.</span></li>
+          <li><span class="cond"><span class="sr">If you notice: </span>Flickering or dimming lights<span class="sr">.</span></span><span class="act"><span class="sr">What to do: </span>Book a visit.</span></li>
+          <li><span class="cond"><span class="sr">If you notice: </span>A breaker that trips again and again<span class="sr">.</span></span><span class="act"><span class="sr">What to do: </span>Find out why before resetting it again.</span></li>
         </ul>
         <a class="btn btn--line tier__btn" href="#book">Book online</a>
       </section>
 
-      <section class="tier tier--4" aria-labelledby="t4">
+      <section class="tier tier--4">
         <p class="tier__code">T-4</p>
         <h3 id="t4" class="tier__title">Power out?</h3>
         <ul class="tier__rows">
-          <li><span class="cond">The whole house or the street is dark</span><span class="act">Check your breakers first, then report it to your electric utility. In Frisco that is Oncor (888-313-4747, or text OUT to 66267) or CoServ (855-938-3496), depending on your address.</span></li>
+          <li><span class="cond"><span class="sr">If you notice: </span>The whole house or the street is dark<span class="sr">.</span></span><span class="act"><span class="sr">What to do: </span>Check your breakers first, then report it to your electric utility. In Frisco that is Oncor (888-313-4747, or text OUT to 66267) or CoServ (855-938-3496), depending on your address.</span></li>
         </ul>
       </section>
     </div>
@@ -494,8 +494,8 @@
 
         <form id="book-form" action="#" method="post" novalidate aria-labelledby="book-title">
           <div class="f-row f-row--2">
-            <div class="field"><label for="f-name">Name</label><input id="f-name" name="name" type="text" autocomplete="name" required></div>
-            <div class="field"><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" required></div>
+            <div class="field"><label for="f-name">Name <span class="req">(required)</span></label><input id="f-name" name="name" type="text" autocomplete="name" required></div>
+            <div class="field"><label for="f-phone">Phone <span class="req">(required)</span></label><input id="f-phone" name="phone" type="tel" autocomplete="tel" required></div>
           </div>
           <div class="f-row f-row--2">
             <div class="field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email"></div>

@@ -74,9 +74,9 @@
         <a class="header-phone" href="tel:+14695550132">
           <svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>
           <span class="header-phone-number">(469) 555-0132</span>
-          <span class="header-phone-short visually-hidden">Call</span>
+          <span class="header-phone-short visually-hidden">Call (469) 555-0132</span>
         </a>
-        <a class="btn btn--copper btn--sm" href="#book">Book online</a>
+        <a class="btn btn--copper btn--sm" href="#book">Book<span class="book-long"> online</span></a>
       </div>
     </div>
   </header>
@@ -334,7 +334,7 @@
 
           <article class="feature-card" data-reveal>
             <figure class="feature-media feature-media--diagram">
-              <svg class="diagram" viewBox="0 0 440 310" role="img" aria-labelledby="diagram-title diagram-desc">
+              <svg class="diagram" viewBox="0 0 440 310" role="img" aria-labelledby="diagram-title" aria-describedby="diagram-desc">
                 <title id="diagram-title">How a standby generator connects</title>
                 <desc id="diagram-desc">Utility power and the generator both feed a transfer switch, which feeds your panel. A generator plugged into a wall outlet is crossed out because it can backfeed into utility lines.</desc>
                 <g class="d-lines">
@@ -512,11 +512,11 @@
 
               <div class="form-row">
                 <div class="field">
-                  <label for="f-name">Name</label>
+                  <label for="f-name">Name <span class="req">(required)</span></label>
                   <input id="f-name" name="name" type="text" autocomplete="name" required>
                 </div>
                 <div class="field">
-                  <label for="f-phone">Phone</label>
+                  <label for="f-phone">Phone <span class="req">(required)</span></label>
                   <input id="f-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required>
                 </div>
               </div>
@@ -556,7 +556,7 @@
                   <span class="switch-track" aria-hidden="true"><span class="switch-thumb"></span></span>
                   <span class="switch-label">Is this urgent?</span>
                 </label>
-                <p class="urgent-note" id="urgent-note" aria-live="polite">For sparks, smoke or a burning smell, call 911 first. Otherwise call our 24/7 line (Sample): <a href="tel:+14695550132">(469) 555-0132</a>.</p>
+                <p class="urgent-note" id="urgent-note">For sparks, smoke or a burning smell, call 911 first. Otherwise call our 24/7 line (Sample): <a href="tel:+14695550132">(469) 555-0132</a>.</p>
               </div>
 
               <fieldset class="field windows">
