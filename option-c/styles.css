@@ -215,6 +215,15 @@ p { margin: 0; }
 .path--plan:hover { background: var(--ink); color: var(--paper); }
 .path--plan:hover .path__meta { color: var(--paper); }
 .hero .fine { margin-top: 16px; }
+.hero__copy { display: flex; flex-direction: column; }
+.hero__copy .paths { order: 2; }
+.hero__copy .fine { order: 3; }
+.hero__copy .lede { order: 4; margin-top: 22px; }
+@media (max-width: 599px) {
+  .hero__copy .label, .hide-mobile, .e-strip .btn { display: none; }
+  .e-strip { padding: 10px 14px; }
+  .hero__grid { padding-top: 20px; }
+}
 
 .hero__drawing { margin: 0; align-self: center; }
 .hero__drawing svg { width: 100%; height: auto; max-height: 560px; }
@@ -248,8 +257,12 @@ p { margin: 0; }
 
 @media (min-width: 900px) {
   .zones--top { display: flex; }
-  .hero__grid { grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); gap: clamp(32px, 4vw, 80px); align-items: center; }
-  .title-block { grid-template-columns: 1.6fr 1fr 1.6fr 0.6fr 1fr 1.3fr; }
+  .hero__grid { grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr); gap: clamp(32px, 4vw, 80px); align-items: center; }
+  .hero__drawing { order: -1; }
+  /* Scale and sheet cells first, so the contractor name stays clear of the bottom-left preview switcher. */
+  .title-block { grid-template-columns: 0.7fr 1fr 1.6fr 1fr 1.6fr 1.3fr; }
+  .tb:nth-child(4) { order: -2; }
+  .tb:nth-child(5) { order: -1; }
   .tb, .tb:nth-child(2n) { border-right: 1px solid var(--ink); border-bottom: 0; }
   .tb:last-child { border-right: 0; grid-column: auto; }
   .tb--name { grid-column: auto; }
@@ -306,6 +319,12 @@ p { margin: 0; }
 .cond { font-weight: 500; }
 .act { font-family: var(--mono); font-size: 0.875rem; color: var(--ink-2); line-height: 1.55; }
 .tier__btn { justify-self: start; margin-top: 6px; }
+.tier__badge {
+  display: inline-flex; align-items: center; gap: 10px; padding: 0;
+  font-family: var(--mono); font-size: 1.0625rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase;
+  color: var(--accent-ink); cursor: default;
+}
+.tier__badge::before { content: ""; width: 12px; height: 12px; background: var(--accent); flex-shrink: 0; }
 .tier--1 { background: repeating-linear-gradient(-45deg, rgba(164, 71, 31, 0.06) 0 8px, transparent 8px 16px); }
 .tier--1 .tier__code { color: #fff; background: var(--accent); justify-self: start; padding: 2px 8px; }
 .tier--1 .tier__title { color: var(--accent-ink); }
@@ -509,3 +528,7 @@ html:not(.js) form:has(#f-urgent:checked) .urgent-note--nojs { display: block; }
   .sec-head { max-width: 1100px; }
   .hero__drawing svg { max-height: 720px; }
 }
+
+/* The preview switcher stylesheet pads every last-of-type body child; only the footer should keep it.
+   The :not(#_) raises specificity above that rule. Remove with the switcher at launch. */
+body > .skip:not(#_), body > .preview-bar:not(#_), body > .site-header:not(#_), body > main:not(#_) { padding-bottom: 0; }

@@ -329,7 +329,7 @@
     top: 0;
     left: 50%;
     width: min(100%, 2400px);
-    height: 330px;
+    height: 290px;
     transform: translateX(-50%);
   }
   .hero__media img {
@@ -346,17 +346,27 @@
     position: absolute;
     inset: 0;
     background:
-      linear-gradient(180deg, color-mix(in oklch, var(--ink), transparent 40%) 0%, transparent 30%, transparent 55%, var(--ink) 100%),
+      linear-gradient(180deg, color-mix(in oklch, var(--ink), transparent 40%) 0%, transparent 30%, transparent 50%, color-mix(in oklch, var(--ink), transparent 25%) 78%, var(--ink) 100%),
       linear-gradient(90deg, color-mix(in oklch, var(--ink), transparent 30%), transparent 60%);
   }
 
   .hero { --hero-pb: clamp(56px, 7vw, 120px); }
   .hero__wrap {
-    padding-top: 250px;
+    padding-top: 205px;
     padding-bottom: var(--hero-pb);
     width: 100%;
   }
-  .hero__content { max-width: 1080px; }
+  .hero__content { max-width: 1080px; display: flex; flex-direction: column; }
+  /* Phones: the two paths come straight after the headline so the call button sits
+     in the first screen, clear of the bottom-left corner. */
+  .hero__content .eyebrow { order: 1; }
+  .hero__title { order: 2; }
+  .paths { order: 3; margin-top: 24px; }
+  .hero__lede { order: 4; }
+  @media (min-width: 700px) {
+    .hero__lede { order: 3; }
+    .paths { order: 4; margin-top: 32px; }
+  }
   .hero__lede, .hero__content .eyebrow { max-width: 36rem; }
 
   .eyebrow {
@@ -401,7 +411,6 @@
   /* Two paths */
   .paths {
     position: relative;
-    margin-top: 32px;
     display: grid;
     gap: 14px;
   }
@@ -492,8 +501,12 @@
       background:
         linear-gradient(180deg, var(--ink) 0%, transparent 22%, transparent 70%, var(--ink) 100%);
     }
-    .hero__wrap { padding-top: clamp(64px, 7vw, 120px); }
-    .hero__title { font-size: clamp(5rem, 6vw, 7rem); }
+    .hero { --hero-pb: clamp(100px, 8vw, 140px); }
+    .hero__wrap { padding-top: 40px; }
+    .hero__title { font-size: clamp(4rem, min(6vw, 11.5svh), 7rem); }
+    .hero__title { margin-top: 10px; }
+    .hero__lede { margin-top: 18px; max-width: 42rem; }
+    .hero__lede, .hero__content .eyebrow { max-width: 42rem; }
   }
   @media (min-width: 2400px) {
     .hero__media { width: 1500px; right: calc((100% - 1600px) / 2 - 200px); }
@@ -1306,3 +1319,12 @@
     50% { box-shadow: 0 0 0 1px color-mix(in oklch, var(--volt), transparent 70%), 0 24px 70px -24px var(--volt-glow); }
   }
 }
+
+
+/* ---------- Switcher compatibility (unlayered on purpose) ----------
+   The preview switcher's stylesheet adds 5rem bottom padding to every body child that is the
+   last of its type. Only the footer should keep it; reset the others. */
+body > .skip.skip { padding-bottom: 12px; }
+body > .preview-bar.preview-bar { padding-bottom: 8px; }
+body > .site-header.site-header,
+body > main#main { padding-bottom: 0; }
