@@ -1,6 +1,6 @@
 <!--
-  Option B, "Clean and trusted": a bright white page in deep ink blue and copper, with soft rounded type, that walks a worried homeowner to the right next step and shows honest Sample starting prices.
-  Pitch note: look first at the hero's two paths ("Something's wrong right now" / "Planning a project"), then scroll to the four priced service cards and the "What changes the price" note beside them.
+  Option B, "Clean and trusted": a bright white page in deep ink blue and bright copper, with rounded Rubik headings, that walks a worried homeowner to the right next step and shows honest Sample starting prices.
+  Pitch note: look first at the hero's two paths ("Something's wrong right now" / "Planning a project"), then scroll to the "Starting prices" menu and the "What changes the price" note beside it.
 -->
 <!doctype html>
 <html lang="en">
@@ -13,7 +13,7 @@
   <meta name="theme-color" content="#132A45">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400..800;1,400..600&family=Fraunces:opsz,wght,SOFT@9..144,400..700,100&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400..800;1,400..600&family=Rubik:wght@500..700&display=swap">
   <link rel="preload" as="image" href="../assets/img/home-dusk-02-1600.webp" imagesrcset="../assets/img/home-dusk-02-800.webp 800w, ../assets/img/home-dusk-02-1600.webp 1600w, ../assets/img/home-dusk-02-2400.webp 2400w" imagesizes="(min-width: 1000px) 46vw, 100vw">
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -38,6 +38,7 @@
       <symbol id="i-badge" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="14" rx="2.5"/><circle cx="9" cy="11" r="2.25"/><path d="M5.75 16c.6-1.6 1.8-2.5 3.25-2.5s2.65.9 3.25 2.5M14.5 10h3.5M14.5 13.5h3.5"/></symbol>
       <symbol id="i-tag" viewBox="0 0 24 24"><path d="M3.5 12.4V4.5a1 1 0 0 1 1-1h7.9a1 1 0 0 1 .7.3l7.6 7.6a1 1 0 0 1 0 1.4l-7.9 7.9a1 1 0 0 1-1.4 0l-7.6-7.6a1 1 0 0 1-.3-.7z"/><circle cx="8.25" cy="8.25" r="1.5"/></symbol>
       <symbol id="i-home" viewBox="0 0 24 24"><path d="M3.5 11 12 4l8.5 7M5.5 9.5v10.5h13V9.5"/><path d="m9 14.5 2.25 2.25L15.5 12.5"/></symbol>
+      <symbol id="i-badge-dollar" viewBox="0 0 24 24"><rect x="2.5" y="6" width="19" height="12" rx="2.5"/><circle cx="12" cy="12" r="2.75"/><path d="M6 9.5v5M18 9.5v5"/></symbol>
       <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
       <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.25"/></symbol>
     </defs>
@@ -94,14 +95,14 @@
           </p>
           <a class="emergency-strip-call" href="tel:+14695550132">
             <svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>
-            Call (469) 555-0132
+            <span><span class="emergency-strip-verb">Call </span>(469) 555-0132</span>
           </a>
         </div>
 
         <div class="hero-grid">
           <div class="hero-copy">
-            <p class="eyebrow">Homes and light commercial · Frisco, TX</p>
-            <h1 id="hero-title" class="hero-title">Calm, clear help with your home&rsquo;s <em>electrical</em>.</h1>
+            <p class="eyebrow hero-eyebrow">Homes and light commercial · Frisco, TX</p>
+            <h1 id="hero-title" class="hero-title">Calm, clear help when your power <em>acts up</em>.</h1>
             <p class="hero-lede">Tell us what&rsquo;s going on. We&rsquo;ll find the cause, explain it in plain words, and show you the price before we start <span class="tag">Sample</span>.</p>
 
             <div class="paths">
@@ -129,9 +130,15 @@
               </article>
             </div>
 
+            <!-- PLACEHOLDER: name, license number, licensed & insured -->
+            <p class="license-line">
+              <span><strong>Ampwell Electric</strong> · TECL 00000 <span class="tag">Sample</span></span>
+              <span>Licensed &amp; insured <span class="tag">Sample</span></span>
+              <a href="https://www.tdlr.texas.gov/LicenseSearch/" rel="noopener" target="_blank">Check any Texas license on TDLR<span class="visually-hidden"> (opens in a new tab)</span> <svg class="icon" aria-hidden="true"><use href="#i-external"/></svg></a>
+            </p>
           </div>
 
-          <figure class="hero-media">
+          <div class="hero-media">
             <img
               src="../assets/img/home-dusk-02-1600.webp"
               srcset="../assets/img/home-dusk-02-800.webp 800w, ../assets/img/home-dusk-02-1600.webp 1600w, ../assets/img/home-dusk-02-2400.webp 2400w"
@@ -139,30 +146,56 @@
               width="1600" height="1069"
               alt="Large stone and siding home at dusk with lit lamp posts, garage lights and a curved driveway"
               fetchpriority="high" decoding="async">
-            <figcaption class="hero-card">
-              <!-- PLACEHOLDER: name, license number, licensed & insured, warranty, master electrician -->
-              <span class="hero-card-license"><strong>Ampwell Electric</strong> · TECL 00000 <span class="tag">Sample</span></span>
-              <span class="hero-card-row"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> <span>Licensed &amp; insured <span class="tag">Sample</span></span></span>
-              <span class="hero-card-row"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> <span>1-year workmanship warranty <span class="tag">Sample</span></span></span>
-              <span class="hero-card-row"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> <span>Master Electrician of record <span class="tag">Sample</span></span></span>
-              <a class="hero-card-link" href="https://www.tdlr.texas.gov/LicenseSearch/" rel="noopener" target="_blank">Check any Texas license on TDLR<span class="visually-hidden"> (opens in a new tab)</span> <svg class="icon" aria-hidden="true"><use href="#i-external"/></svg></a>
-            </figcaption>
-          </figure>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- 2. SERVICES -->
+    <!-- 2. SERVICES: the price menu -->
     <section class="section services" id="services" aria-labelledby="services-title">
       <div class="container">
-        <div class="services-head">
-          <div class="section-intro" data-reveal>
-            <p class="eyebrow">Services &amp; prices</p>
-            <h2 id="services-title" class="section-title">Four common jobs, priced up front.</h2>
-            <p class="section-lede">Most calls are one of these. Each card shows where the price starts, so you&rsquo;re not guessing before anyone shows up.</p>
+        <div class="section-intro" data-reveal>
+          <p class="eyebrow">Services &amp; prices</p>
+          <h2 id="services-title" class="section-title">Starting prices, before anyone shows up.</h2>
+          <p class="section-lede">Four common jobs. Each one shows where the price starts.</p>
+        </div>
+
+        <div class="services-layout">
+          <!-- PLACEHOLDER: all four starting prices are invented samples -->
+          <div class="menu" data-reveal>
+            <div class="menu-head">
+              <h3 class="menu-title">Starting prices</h3>
+              <span class="tag tag--copper">Sample pricing</span>
+            </div>
+            <ul class="menu-list" role="list">
+              <li class="menu-row">
+                <h4 class="menu-name"><svg class="icon" aria-hidden="true"><use href="#i-meter"/></svg> Troubleshooting visit</h4>
+                <span class="menu-leader" aria-hidden="true"></span>
+                <p class="menu-price"><span class="menu-from">from</span> $99</p>
+                <p class="menu-desc">Flickering lights, a dead circuit, a cover plate that&rsquo;s hot to the touch. Don&rsquo;t open it up yourself. We find the cause.</p>
+              </li>
+              <li class="menu-row">
+                <h4 class="menu-name"><svg class="icon" aria-hidden="true"><use href="#i-surge"/></svg> Whole-home surge protector, installed</h4>
+                <span class="menu-leader" aria-hidden="true"></span>
+                <p class="menu-price"><span class="menu-from">from</span> $450</p>
+                <p class="menu-desc">One device at the panel helps protect smoke alarms, GFCI and AFCI devices, and electronics. Current electrical code requires it when service equipment is replaced.</p>
+              </li>
+              <li class="menu-row">
+                <h4 class="menu-name"><svg class="icon" aria-hidden="true"><use href="#i-ev"/></svg> Level 2 EV charger installation</h4>
+                <span class="menu-leader" aria-hidden="true"></span>
+                <p class="menu-price"><span class="menu-from">from</span> $650</p>
+                <p class="menu-desc">240 volts on its own dedicated circuit, plug-in or hardwired. We check your panel with a load calculation first.</p>
+              </li>
+              <li class="menu-row">
+                <h4 class="menu-name"><svg class="icon" aria-hidden="true"><use href="#i-panel"/></svg> 200-amp panel upgrade</h4>
+                <span class="menu-leader" aria-hidden="true"></span>
+                <p class="menu-price"><span class="menu-from">from</span> $2,400</p>
+                <p class="menu-desc">We pull the permit and coordinate the disconnect, inspection and reconnect with your utility. Have an older panel, like a Federal Pacific? Ask us to take a look.</p>
+              </li>
+            </ul>
           </div>
 
-          <!-- PLACEHOLDER: price factors line, prices are invented samples -->
+          <!-- PLACEHOLDER: price factors line -->
           <aside class="price-note" aria-labelledby="price-note-title" data-reveal>
             <p class="price-note-label"><span class="tag tag--copper">Sample pricing</span></p>
             <h3 id="price-note-title" class="price-note-title">What changes the price</h3>
@@ -175,60 +208,12 @@
           </aside>
         </div>
 
-        <!-- PLACEHOLDER: all four starting prices -->
-        <ul class="price-cards" role="list">
-          <li class="price-card" data-reveal>
-            <div class="price-card-top">
-              <span class="icon-tile"><svg class="icon" aria-hidden="true"><use href="#i-meter"/></svg></span>
-              <span class="tag tag--copper">Sample pricing</span>
-            </div>
-            <h3 class="card-title">Troubleshooting and repairs</h3>
-            <p class="card-text">Flickering lights, a dead circuit, a cover plate that&rsquo;s hot to the touch. Don&rsquo;t open it up yourself. We find the cause.</p>
-            <p class="price"><span class="price-from">Troubleshooting visit from</span> <span class="price-amount">$99</span></p>
-          </li>
-          <li class="price-card" data-reveal>
-            <div class="price-card-top">
-              <span class="icon-tile"><svg class="icon" aria-hidden="true"><use href="#i-surge"/></svg></span>
-              <span class="tag tag--copper">Sample pricing</span>
-            </div>
-            <h3 class="card-title">Whole-home surge protection</h3>
-            <p class="card-text">One device at the panel helps protect smoke alarms, GFCI and AFCI devices, and electronics. Current code requires it when service equipment is replaced.</p>
-            <p class="price"><span class="price-from">Installed, from</span> <span class="price-amount">$450</span></p>
-          </li>
-          <li class="price-card" data-reveal>
-            <div class="price-card-top">
-              <span class="icon-tile"><svg class="icon" aria-hidden="true"><use href="#i-ev"/></svg></span>
-              <span class="tag tag--copper">Sample pricing</span>
-            </div>
-            <h3 class="card-title">Level 2 EV charger installation</h3>
-            <p class="card-text">240 volts on its own dedicated circuit, plug-in or hardwired. We check your panel with a load calculation first.</p>
-            <p class="price"><span class="price-from">Installation from</span> <span class="price-amount">$650</span></p>
-          </li>
-          <li class="price-card" data-reveal>
-            <div class="price-card-top">
-              <span class="icon-tile"><svg class="icon" aria-hidden="true"><use href="#i-panel"/></svg></span>
-              <span class="tag tag--copper">Sample pricing</span>
-            </div>
-            <h3 class="card-title">Panel upgrades (100A to 200A)</h3>
-            <p class="card-text">We pull the permit and coordinate the disconnect, inspection and reconnect with your utility. Have an older panel, like a Federal Pacific? Ask us to take a look.</p>
-            <p class="price"><span class="price-from">200-amp panel upgrade from</span> <span class="price-amount">$2,400</span></p>
-          </li>
-        </ul>
-
         <div class="more-services">
           <h3 class="more-title" data-reveal>Everything else we do</h3>
           <ul class="service-list" role="list">
-            <li class="service-item service-item--photo" data-reveal>
-              <img
-                src="../assets/img/recessed-lighting-kitchen-02-800.webp"
-                srcset="../assets/img/recessed-lighting-kitchen-02-800.webp 800w, ../assets/img/recessed-lighting-kitchen-02-1600.webp 1600w"
-                sizes="(min-width: 1000px) 30vw, (min-width: 640px) 46vw, 100vw"
-                width="800" height="534" loading="lazy" decoding="async"
-                alt="Dark wood kitchen with recessed ceiling lights, a pendant over the island and lit under-cabinet strips">
-              <div class="service-item-body">
-                <h4 class="service-name"><svg class="icon" aria-hidden="true"><use href="#i-light"/></svg> Lighting</h4>
-                <p>Recessed, under-cabinet, landscape and ceiling fans. A fan hangs from a box listed for fan support.</p>
-              </div>
+            <li class="service-item" data-reveal>
+              <h4 class="service-name"><svg class="icon" aria-hidden="true"><use href="#i-light"/></svg> Lighting</h4>
+              <p>Recessed, under-cabinet, landscape and ceiling fans. A fan hangs from a box listed for fan support.</p>
             </li>
             <li class="service-item" data-reveal>
               <h4 class="service-name"><svg class="icon" aria-hidden="true"><use href="#i-outlet"/></svg> Outlets, GFCI and AFCI, dedicated circuits</h4>
@@ -248,7 +233,8 @@
             </li>
             <li class="service-item service-item--cta" data-reveal>
               <h4 class="service-name">Not sure what you need?</h4>
-              <p>Book a troubleshooting visit. We&rsquo;ll tell you what we find and what it costs before any work starts.</p>
+              <!-- PLACEHOLDER: upfront pricing promise -->
+              <p>Book a troubleshooting visit. We&rsquo;ll tell you what we find and what it costs before any work starts <span class="tag">Sample</span>.</p>
               <a class="btn btn--ghost" href="#book">Book a visit <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
             </li>
           </ul>
@@ -258,11 +244,12 @@
 
     <!-- 3. EMERGENCY GUIDE -->
     <section class="section guide" id="emergency" aria-labelledby="guide-title">
-      <div class="container container--narrow">
-        <div class="section-intro section-intro--center" data-reveal>
+      <div class="container guide-layout">
+        <div class="guide-intro" data-reveal>
           <p class="eyebrow">Quick guide</p>
           <h2 id="guide-title" class="section-title">Is it an emergency?</h2>
           <p class="section-lede">Start at the top. The first match is what to do.</p>
+          <p class="guide-credit">Based on NFPA, Oncor and CoServ safety guidance.</p>
         </div>
 
         <ol class="tiers" role="list">
@@ -311,8 +298,6 @@
             </ul>
           </li>
         </ol>
-
-        <p class="guide-credit">Based on NFPA, Oncor and CoServ safety guidance.</p>
       </div>
     </section>
 
@@ -321,7 +306,7 @@
       <div class="container">
         <div class="section-intro section-intro--on-dark" data-reveal>
           <p class="eyebrow">EV chargers and backup power</p>
-          <h2 id="feature-title" class="section-title">Two projects people ask about most. Done to current electrical code.</h2>
+          <h2 id="feature-title" class="section-title">EV chargers and generator hookups, done to current electrical code.</h2>
         </div>
 
         <div class="feature-grid">
@@ -401,48 +386,50 @@
 
     <!-- 5. WHY CHOOSE US -->
     <section class="section why" aria-labelledby="why-title">
-      <div class="container">
-        <div class="why-grid">
-          <div class="why-copy">
-            <div class="section-intro" data-reveal>
-              <p class="eyebrow">Why homeowners call us</p>
-              <h2 id="why-title" class="section-title">Licensed, upfront, and tidy.</h2>
-              <p class="section-lede">Texas requires electrical work to be done by licensed electricians, with narrow exceptions. Here&rsquo;s what you can expect from us.</p>
-            </div>
+      <div class="container why-grid">
+        <div class="why-media" data-reveal>
+          <img
+            src="../assets/img/recessed-lighting-kitchen-02-1600.webp"
+            srcset="../assets/img/recessed-lighting-kitchen-02-800.webp 800w, ../assets/img/recessed-lighting-kitchen-02-1600.webp 1600w"
+            sizes="(min-width: 1000px) 40vw, 100vw"
+            width="1600" height="1068" loading="lazy" decoding="async"
+            alt="Dark wood kitchen with recessed ceiling lights, a pendant over the island and lit under-cabinet strips">
+        </div>
 
-            <!-- PLACEHOLDER: licensed & insured, master electrician, upfront pricing, clean job sites, warranty, financing -->
-            <ul class="why-list" role="list">
-              <li class="why-item" data-reveal>
-                <span class="icon-tile icon-tile--ink"><svg class="icon" aria-hidden="true"><use href="#i-badge"/></svg></span>
-                <div>
-                  <h3 class="why-title">Licensed &amp; insured <span class="tag">Sample</span></h3>
-                  <p>Ampwell Electric, TECL 00000 <span class="tag">Sample</span>, with a Master Electrician of record <span class="tag">Sample</span>. You can look us up on the <a href="https://www.tdlr.texas.gov/LicenseSearch/" rel="noopener" target="_blank">TDLR license search<span class="visually-hidden"> (opens in a new tab)</span></a>.</p>
-                </div>
-              </li>
-              <li class="why-item" data-reveal>
-                <span class="icon-tile icon-tile--ink"><svg class="icon" aria-hidden="true"><use href="#i-tag"/></svg></span>
-                <div>
-                  <h3 class="why-title">You see the price before we start <span class="tag">Sample</span></h3>
-                  <p>No guessing before the work starts. Financing available <span class="tag">Sample</span>.</p>
-                </div>
-              </li>
-              <li class="why-item" data-reveal>
-                <span class="icon-tile icon-tile--ink"><svg class="icon" aria-hidden="true"><use href="#i-home"/></svg></span>
-                <div>
-                  <h3 class="why-title">Clean job sites <span class="tag">Sample</span></h3>
-                  <p>We leave your home the way we found it, minus the problem. Backed by a 1-year workmanship warranty <span class="tag">Sample</span>.</p>
-                </div>
-              </li>
-            </ul>
+        <div class="why-copy">
+          <div class="section-intro" data-reveal>
+            <p class="eyebrow">Why homeowners call us</p>
+            <h2 id="why-title" class="section-title">Licensed, upfront, and tidy.</h2>
+            <p class="section-lede">Texas requires electrical work to be done by licensed electricians, with narrow exceptions. Here&rsquo;s what you can expect from us.</p>
           </div>
 
-          <figure class="why-media" data-reveal>
-            <img
-              src="../assets/img/panel-open-01-622.webp"
-              width="622" height="1280" loading="lazy" decoding="async"
-              alt="Open residential breaker panel with rows of breakers and neatly routed wires">
-            <figcaption>Open residential breaker panel. Stock photo.</figcaption>
-          </figure>
+          <!-- PLACEHOLDER: licensed & insured, license number, master electrician, upfront pricing, clean job sites, warranty, same-day, financing -->
+          <ul class="why-list" role="list">
+            <li class="why-item" data-reveal>
+              <h3 class="why-title"><svg class="icon" aria-hidden="true"><use href="#i-badge"/></svg> <span>Licensed &amp; insured <span class="tag">Sample</span></span></h3>
+              <p>TECL 00000 <span class="tag">Sample</span>, with a Master Electrician of record <span class="tag">Sample</span>. Anyone can look up a Texas contractor&rsquo;s license on the <a href="https://www.tdlr.texas.gov/LicenseSearch/" rel="noopener" target="_blank">TDLR license search<span class="visually-hidden"> (opens in a new tab)</span></a>.</p>
+            </li>
+            <li class="why-item" data-reveal>
+              <h3 class="why-title"><svg class="icon" aria-hidden="true"><use href="#i-tag"/></svg> <span>You see the price before we start <span class="tag">Sample</span></span></h3>
+              <p>No guessing before the work starts.</p>
+            </li>
+            <li class="why-item" data-reveal>
+              <h3 class="why-title"><svg class="icon" aria-hidden="true"><use href="#i-home"/></svg> <span>Clean job sites <span class="tag">Sample</span></span></h3>
+              <p>We leave your home the way we found it, minus the problem.</p>
+            </li>
+            <li class="why-item" data-reveal>
+              <h3 class="why-title"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> <span>1-year workmanship warranty <span class="tag">Sample</span></span></h3>
+              <p>Covers our workmanship for a year after the job.</p>
+            </li>
+            <li class="why-item" data-reveal>
+              <h3 class="why-title"><svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg> <span>Same-day service when booked by noon <span class="tag">Sample</span></span></h3>
+              <p>Book online and pick a time window.</p>
+            </li>
+            <li class="why-item" data-reveal>
+              <h3 class="why-title"><svg class="icon" aria-hidden="true"><use href="#i-badge-dollar"/></svg> <span>Financing available <span class="tag">Sample</span></span></h3>
+              <p>Ask about it when you book.</p>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
@@ -450,15 +437,15 @@
     <!-- 6. REVIEWS -->
     <section class="section reviews" id="reviews" aria-labelledby="reviews-title">
       <div class="container">
-        <div class="section-intro section-intro--center" data-reveal>
+        <div class="section-intro" data-reveal>
           <p class="eyebrow">Reviews</p>
           <h2 id="reviews-title" class="section-title">What people tend to notice.</h2>
           <p class="section-lede">These are sample reviews written for this preview.</p>
         </div>
 
         <!-- PLACEHOLDER: all three reviews are samples, replace with real customer reviews -->
-        <ul class="review-grid" role="list">
-          <li class="review" data-reveal>
+        <ul class="review-layout" role="list">
+          <li class="review review--feature" data-reveal>
             <span class="tag tag--copper review-tag">Sample review</span>
             <blockquote>
               <p>&ldquo;They gave us the price before starting, pulled the permit, and explained why our panel needed the upgrade before we added an EV charger.&rdquo;</p>

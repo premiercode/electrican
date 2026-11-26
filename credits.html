@@ -8,13 +8,18 @@
 <style>
   :root { color-scheme: light; }
   body { margin: 0; font: 16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; color: #1b1d21; background: #f7f6f2; }
-  .bar { background: #1b1d21; color: #f7f6f2; font-size: 14px; padding: .6rem 1.25rem; text-align: center; }
+  .bar { background: #1b1d21; color: #f7f6f2; font-size: 14px; padding: .6rem 1.25rem; text-align: center; max-width: none; margin: 0; }
+  @media (min-width: 2400px) { html { font-size: 125%; } body { font-size: 20px; } .bar { font-size: 17px; } main { max-width: 72rem; } li div { font-size: 18px; } }
   main { max-width: 60rem; margin: 0 auto; padding: 2.5rem 1.25rem 6rem; }
   h1 { font-size: clamp(1.75rem, 4vw, 2.5rem); line-height: 1.15; margin: 0 0 .5rem; }
   p { max-width: 42rem; }
   ul { list-style: none; padding: 0; margin: 2rem 0; display: grid; gap: 1rem; grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr)); }
   li { background: #fff; border: 1px solid #dddad2; border-radius: 10px; overflow: hidden; }
   li img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; background: #e8e6e0; }
+  li img.contain { object-fit: contain; }
+  ul { align-items: start; }
+  .back-row { display: flex; flex-wrap: wrap; gap: .25rem 1.25rem; align-items: center; margin-bottom: 1rem; }
+  .back-row span { color: #55595f; }
   li div { padding: .85rem 1rem 1rem; font-size: 15px; }
   li strong { display: block; margin-bottom: .25rem; }
   a { color: #0b4f8a; }
@@ -23,9 +28,9 @@
 </style>
 </head>
 <body>
-<p class="bar">Design preview. Ampwell Electric is a fictional company. Contact details, license number, prices and reviews are samples.</p>
+<div class="bar">Design preview. Ampwell Electric is a fictional company. Contact details, license number, prices and reviews are samples.</div>
 <main>
-  <a class="back" href="option-a/">&larr; Back to the design preview</a>
+  <nav class="back-row" aria-label="Back to the design preview"><span>Back to the design preview:</span> <a class="back" href="option-a/">Option A</a> <a class="back" href="option-b/">Option B</a> <a class="back" href="option-c/">Option C</a></nav>
   <h1>Photo credits</h1>
   <p>Every photo in this preview is royalty-free stock. None shows Ampwell Electric's work, crew, customers or a real project. The licenses allow commercial use without attribution, and we credit the photographers anyway.</p>
   <ul>
@@ -39,7 +44,7 @@
       <div><strong>Kitchen with recessed and under-cabinet lighting</strong>Photo by <a href="https://www.pexels.com/@curtis-adams-1694007">Curtis Adams</a> on <a href="https://www.pexels.com/photo/16501286/">Pexels</a>. <a href="https://www.pexels.com/license/">Pexels License</a>.</div></li>
     <li><img src="assets/img/ev-charger-wall-01-800.webp" width="800" height="534" alt="Black wall-mounted EV charger with a lit display on a concrete garage wall" loading="lazy">
       <div><strong>Wall-mounted EV charger</strong>Photo by <a href="https://www.pexels.com/@smart-me-ag-2155714756">smart-me AG</a> on <a href="https://www.pexels.com/photo/34800670/">Pexels</a>. <a href="https://www.pexels.com/license/">Pexels License</a>.</div></li>
-    <li><img src="assets/img/panel-open-01-622.webp" width="622" height="1280" alt="Open residential breaker panel with rows of breakers and neatly routed wires" loading="lazy" style="aspect-ratio:auto;max-height:22rem;object-fit:contain">
+    <li><img src="assets/img/panel-open-01-622.webp" width="622" height="1280" alt="Open residential breaker panel with rows of breakers and neatly routed wires" loading="lazy" class="contain">
       <div><strong>Open residential breaker panel</strong>Photo by <a href="https://pixabay.com/users/techcanada-771455/">techcanada</a> on <a href="https://pixabay.com/photos/electrical-panel-electrical-4429848/">Pixabay</a>. <a href="https://pixabay.com/service/license-summary/">Pixabay Content License</a>.</div></li>
   </ul>
   <p>Photographer names for Pexels are shown as the profile names listed on each photo. <!-- PLACEHOLDER: confirm Pexels display names before launch --></p>

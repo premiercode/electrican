@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Archivo:wdth,wght@62..125,400..800&display=swap">
   <link rel="preload" as="image" href="../assets/img/landscape-lighting-01-1600.webp"
         imagesrcset="../assets/img/landscape-lighting-01-800.webp 800w, ../assets/img/landscape-lighting-01-1600.webp 1600w, ../assets/img/landscape-lighting-01-2400.webp 2400w"
-        imagesizes="(min-width: 1000px) 65vw, 150vw" fetchpriority="high">
+        imagesizes="(min-width: 1000px) 55vw, 100vw" fetchpriority="high">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -64,7 +64,7 @@
       <div class="hero__media">
         <img src="../assets/img/landscape-lighting-01-1600.webp"
              srcset="../assets/img/landscape-lighting-01-800.webp 800w, ../assets/img/landscape-lighting-01-1600.webp 1600w, ../assets/img/landscape-lighting-01-2400.webp 2400w"
-             sizes="(min-width: 1000px) 65vw, 150vw"
+             sizes="(min-width: 1000px) 55vw, 100vw"
              width="2400" height="1597"
              alt="Stone house at night with warm uplights washing its walls under a starry sky"
              fetchpriority="high" loading="eager" decoding="async">
@@ -142,6 +142,7 @@
                 <span class="svc__no">01</span>
                 <h3>Panel upgrades and replacements <span class="svc__spec">100A to 200A</span></h3>
                 <p>Many older homes have 60- or 100-amp service. Homes built since about the 1980s tend to have 200 amps or more. We pull the permit and coordinate the disconnect, inspection and reconnect with your utility.</p>
+                <p>Current electrical code requires whole-home surge protection when service equipment is replaced.</p>
                 <p class="svc__aside">Have an older panel, like a Federal Pacific? Ask us to take a look.</p>
                 <!-- PLACEHOLDER: sample price -->
                 <p class="price"><span class="price__tag">Sample pricing</span> 200-amp panel upgrade <strong>from $2,400</strong></p>
@@ -163,6 +164,7 @@
               <span class="svc__no">03</span>
               <h3>Standby generators and transfer switches</h3>
               <p>A generator connects through a transfer switch, never a wall outlet. It must be sized to carry what the switch transfers, unless the loads are managed.</p>
+              <p class="svc__foot"><a href="#book">Book online<span class="visually-hidden"> for standby generators and transfer switches</span></a></p>
             </li>
             <li class="svc">
               <span class="svc__no">04</span>
@@ -175,6 +177,7 @@
               <span class="svc__no">05</span>
               <h3>Outlets, GFCI and AFCI, dedicated circuits</h3>
               <p>GFCIs protect people from shock. AFCIs help prevent fires from arcing wires. A two-prong outlet with no ground can be upgraded to a GFCI.</p>
+              <p class="svc__foot"><a href="#book">Book online<span class="visually-hidden"> for outlets and dedicated circuits</span></a></p>
             </li>
             <li class="svc svc--light">
               <figure class="svc__photo">
@@ -189,6 +192,7 @@
                 <span class="svc__no">06</span>
                 <h3>Lighting: recessed, under-cabinet, landscape, ceiling fans</h3>
                 <p>New fixtures are licensed electrician work in Texas. A ceiling fan hangs from a box listed for fan support, rated for fans up to 70 pounds.</p>
+                <p class="svc__foot"><a href="#book">Book online<span class="visually-hidden"> for lighting work</span></a></p>
               </div>
             </li>
             <li class="svc">
@@ -202,6 +206,7 @@
               <span class="svc__no">08</span>
               <h3>Inspection reports and code corrections</h3>
               <p>Buying or selling? We fix the electrical items on the report so the work is permitted and inspected.</p>
+              <p class="svc__foot"><a href="#book">Book online<span class="visually-hidden"> for inspection reports and code corrections</span></a></p>
             </li>
             <li class="svc svc--wide">
               <span class="svc__no">09</span>
@@ -421,7 +426,7 @@
           <div class="why">
             <div class="why__head">
               <h2 class="sec-title" id="why-title">Licensed. <span class="volt">Priced first.</span> Cleaned up after.</h2>
-              <p class="sec-sub">Texas requires electrical work to be done by licensed electricians, with narrow exceptions. Look up any contractor, including us, on the TDLR license search. The company claims on this page are samples.</p>
+              <p class="sec-sub">Texas requires electrical work to be done by licensed electricians, with narrow exceptions. Visitors can look up any contractor's license on the TDLR license search. The company claims on this page are samples.</p>
               <a class="text-link" href="https://www.tdlr.texas.gov/LicenseSearch/" rel="noopener" target="_blank">TDLR license search<span class="visually-hidden"> (opens in a new tab)</span></a>
             </div>
             <!-- PLACEHOLDER: every claim in this list (licensed & insured, master electrician, upfront pricing, clean job sites, warranty, financing) -->
@@ -475,17 +480,17 @@
           <!-- PLACEHOLDER: all three reviews are samples; replace with real, verifiable reviews -->
           <ul class="reviews" role="list">
             <li class="review">
-              <p class="review__label">Sample review</p>
+              <div class="review__head"><span class="review__no">Ticket 01 &middot; Panel &amp; EV charger</span><span class="review__label">Sample review</span></div>
               <blockquote><p>They gave us the price before starting, pulled the permit, and explained why our panel needed the upgrade before we added an EV charger.</p></blockquote>
               <p class="review__who">Homeowner, panel and EV charger <span>(Sample review)</span></p>
             </li>
             <li class="review">
-              <p class="review__label">Sample review</p>
+              <div class="review__head"><span class="review__no">Ticket 02 &middot; Inspection report</span><span class="review__label">Sample review</span></div>
               <blockquote><p>Our inspection report flagged several electrical items. They quoted it fast enough for our option period and sent an itemized invoice I could forward to the buyer.</p></blockquote>
               <p class="review__who">Real-estate agent <span>(Sample review)</span></p>
             </li>
             <li class="review">
-              <p class="review__label">Sample review</p>
+              <div class="review__head"><span class="review__no">Ticket 03 &middot; Service call</span><span class="review__label">Sample review</span></div>
               <blockquote><p>Arrived in the window they gave us, wore shoe covers, fixed only what we called about, and cleaned up after.</p></blockquote>
               <p class="review__who">Homeowner, service call <span>(Sample review)</span></p>
             </li>
