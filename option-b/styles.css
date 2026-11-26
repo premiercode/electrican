@@ -1332,3 +1332,9 @@ body > .skip-link.skip-link { padding-bottom: 0.75rem; }
   .btn--sm { padding-inline: 0.85rem; }
   .book-long { display: none; }
 }
+.field input:focus-visible, .field select:focus-visible, .field textarea:focus-visible {
+  border-color: var(--ink-800);
+  outline: 2px solid var(--ink-800);
+  outline-offset: 2px;
+}
+.window input:checked + span { border-color: var(--ink-800); }

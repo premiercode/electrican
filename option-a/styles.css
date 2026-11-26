@@ -693,7 +693,7 @@
     color: var(--text);
     text-decoration: none;
   }
-  .svc__foot a::after { content: "\2192" / ""; color: var(--volt); transition: transform 0.3s var(--ease); }
+  .svc__foot a::after { content: "\2192"; content: "\2192" / ""; color: var(--volt); transition: transform 0.3s var(--ease); }
   .svc__foot a:hover { color: var(--volt); }
   .svc__foot a:hover::after { transform: translateX(4px); }
   .price {
@@ -1161,7 +1161,7 @@
     font-size: clamp(1.9rem, 4vw, 3rem);
     line-height: 1.02;
   }
-  .cities li:not(:last-child)::after { content: " /" / ""; color: var(--volt); font-weight: 700; }
+  .cities li:not(:last-child)::after { content: " /"; content: " /" / ""; color: var(--volt); font-weight: 700; }
 
   /* Form */
   .form {
@@ -1453,3 +1453,5 @@ body > main#main { padding-bottom: 0; }
   .urgent__input:checked + .urgent__label .urgent__switch > span { background: Highlight; }
   .windows input:checked + span { outline: 3px solid Highlight; outline-offset: -4px; }
 }
+.field input:focus-visible, .field select:focus-visible, .field textarea:focus-visible { border-color: var(--volt); }
+.urgent__input:checked + .urgent__label .urgent__switch { border-color: var(--volt); }

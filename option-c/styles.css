@@ -592,4 +592,6 @@ body > .skip:not(#_), body > .preview-bar:not(#_), body > .site-header:not(#_), 
   .win span { background: Canvas; color: CanvasText; border-color: CanvasText; }
   .win input:checked + span { background: Highlight; color: HighlightText; border-color: Highlight; }
   .win input:focus-visible + span { outline-color: CanvasText; }
+  .toggle:focus-visible { outline-color: CanvasText; }
 }
+.gen-notes a:hover { color: var(--action-ink); }
