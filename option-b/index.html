@@ -11,6 +11,7 @@
   <title>Ampwell Electric (Sample) | Electrician in Frisco, TX | Design preview B</title>
   <meta name="description" content="Design preview for a fictional electrician. Ampwell Electric (Sample) serves Frisco, Plano, Little Elm, The Colony, Prosper, Carrollton and Lewisville.">
   <meta name="theme-color" content="#132A45">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23132a45'/%3E%3Crect x='9' y='5' width='14' height='22' rx='3.5' fill='none' stroke='%23d98e4f' stroke-width='2'/%3E%3Cpath d='M13.5 11v3.5M18.5 11v3.5' stroke='%23d98e4f' stroke-width='2' stroke-linecap='round'/%3E%3Cpath d='M14.5 21a1.5 1.5 0 0 1 3 0v1h-3z' fill='%23d98e4f'/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400..800;1,400..600&family=Rubik:wght@500..700&display=swap">
@@ -35,12 +36,9 @@
       <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4M8 14h3"/></symbol>
       <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
       <symbol id="i-external" viewBox="0 0 24 24"><path d="M14 4.5h5.5V10M19.5 4.5 11 13M17 14v4.5a1.5 1.5 0 0 1-1.5 1.5h-10A1.5 1.5 0 0 1 4 18.5v-10A1.5 1.5 0 0 1 5.5 7H10"/></symbol>
-      <symbol id="i-badge" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="14" rx="2.5"/><circle cx="9" cy="11" r="2.25"/><path d="M5.75 16c.6-1.6 1.8-2.5 3.25-2.5s2.65.9 3.25 2.5M14.5 10h3.5M14.5 13.5h3.5"/></symbol>
-      <symbol id="i-tag" viewBox="0 0 24 24"><path d="M3.5 12.4V4.5a1 1 0 0 1 1-1h7.9a1 1 0 0 1 .7.3l7.6 7.6a1 1 0 0 1 0 1.4l-7.9 7.9a1 1 0 0 1-1.4 0l-7.6-7.6a1 1 0 0 1-.3-.7z"/><circle cx="8.25" cy="8.25" r="1.5"/></symbol>
-      <symbol id="i-home" viewBox="0 0 24 24"><path d="M3.5 11 12 4l8.5 7M5.5 9.5v10.5h13V9.5"/><path d="m9 14.5 2.25 2.25L15.5 12.5"/></symbol>
-      <symbol id="i-badge-dollar" viewBox="0 0 24 24"><rect x="2.5" y="6" width="19" height="12" rx="2.5"/><circle cx="12" cy="12" r="2.75"/><path d="M6 9.5v5M18 9.5v5"/></symbol>
-      <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
-      <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.25"/></symbol>
+      <symbol id="i-exit" viewBox="0 0 24 24"><path d="M13.5 3.5h5a1 1 0 0 1 1 1v15a1 1 0 0 1-1 1h-5"/><path d="M3.5 12h10M9.5 7.5 14 12l-4.5 4.5"/></symbol>
+      <symbol id="i-stop" viewBox="0 0 24 24"><path d="M8.3 2.75h7.4l5.55 5.55v7.4l-5.55 5.55H8.3l-5.55-5.55V8.3z"/><path d="M8 12h8"/></symbol>
+      <symbol id="i-breaker" viewBox="0 0 24 24"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><rect x="9.5" y="6" width="5" height="7" rx="1.25"/><path d="M12 16.5v1.5"/></symbol>
     </defs>
   </svg>
 
@@ -56,7 +54,7 @@
         <!-- PLACEHOLDER: company name -->
         <span class="wordmark-name">Ampwell <span>Electric</span></span>
         <!-- PLACEHOLDER: license number -->
-        <span class="wordmark-license">TECL 00000 <span class="tag tag--inline">Sample</span></span>
+        <span class="wordmark-license"><span class="nowrap">TECL 00000 <span class="tag tag--inline">Sample</span></span></span>
       </a>
 
       <nav class="site-nav" aria-label="Main">
@@ -83,7 +81,7 @@
 
   <main id="main">
 
-    <!-- 1. HERO -->
+    <!-- HERO -->
     <section class="hero" aria-labelledby="hero-title">
       <div class="container">
         <!-- PLACEHOLDER: 24/7 emergency line -->
@@ -102,8 +100,8 @@
         <div class="hero-grid">
           <div class="hero-copy">
             <p class="eyebrow hero-eyebrow">Homes and light commercial · Frisco, TX</p>
-            <h1 id="hero-title" class="hero-title">Calm, clear help when your power <em>acts up</em>.</h1>
-            <p class="hero-lede">Tell us what&rsquo;s going on. We&rsquo;ll find the cause, explain it in plain words, and show you the price before we start <span class="tag">Sample</span>.</p>
+            <h1 id="hero-title" class="hero-title">Calm, clear help when your power acts up.</h1>
+            <p class="hero-lede">Tell us what&rsquo;s going on. We&rsquo;ll find the cause, explain it in plain words, and show you the price before we <span class="nowrap">start <span class="tag">Sample</span></span>.</p>
 
             <div class="paths">
               <article class="path path--urgent">
@@ -121,7 +119,7 @@
                 <h2 class="path-kicker">Planning a project</h2>
                 <p class="path-lead">An EV charger, a panel upgrade, new lighting, a generator hookup.</p>
                 <!-- PLACEHOLDER: same-day promise -->
-                <p class="path-body">Pick a service and a time window. Same-day service when booked by noon <span class="tag">Sample</span>.</p>
+                <p class="path-body">Pick a service and a time window. Same-day service when booked by <span class="nowrap">noon <span class="tag">Sample</span></span>.</p>
                 <a class="btn btn--copper btn--block" href="#book">
                   <svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg>
                   Book online
@@ -132,8 +130,8 @@
 
             <!-- PLACEHOLDER: name, license number, licensed & insured -->
             <p class="license-line">
-              <span><strong>Ampwell Electric</strong> · TECL 00000 <span class="tag">Sample</span></span>
-              <span>Licensed &amp; insured <span class="tag">Sample</span></span>
+              <span><strong>Ampwell Electric</strong> · <span class="nowrap">TECL 00000 <span class="tag">Sample</span></span></span>
+              <span>Licensed &amp; <span class="nowrap">insured <span class="tag">Sample</span></span></span>
               <a href="https://www.tdlr.texas.gov/LicenseSearch/" rel="noopener" target="_blank">Check any Texas license on TDLR<span class="visually-hidden"> (opens in a new tab)</span> <svg class="icon" aria-hidden="true"><use href="#i-external"/></svg></a>
             </p>
           </div>
@@ -151,18 +149,17 @@
       </div>
     </section>
 
-    <!-- 2. SERVICES: the price menu -->
+    <!-- SERVICES: the price menu -->
     <section class="section services" id="services" aria-labelledby="services-title">
       <div class="container">
-        <div class="section-intro" data-reveal>
-          <p class="eyebrow">Services &amp; prices</p>
+        <div class="section-intro">
           <h2 id="services-title" class="section-title">Starting prices, before anyone shows up.</h2>
           <p class="section-lede">Four common jobs. Each one shows where the price starts.</p>
         </div>
 
         <div class="services-layout">
           <!-- PLACEHOLDER: all four starting prices are invented samples -->
-          <div class="menu" data-reveal>
+          <div class="menu">
             <div class="menu-head">
               <h3 class="menu-title">Starting prices</h3>
               <span class="tag tag--copper">Sample pricing</span>
@@ -196,7 +193,7 @@
           </div>
 
           <!-- PLACEHOLDER: price factors line -->
-          <aside class="price-note" aria-labelledby="price-note-title" data-reveal>
+          <aside class="price-note" aria-labelledby="price-note-title">
             <p class="price-note-label"><span class="tag tag--copper">Sample pricing</span></p>
             <h3 id="price-note-title" class="price-note-title">What changes the price</h3>
             <p class="price-note-summary">Final price depends on your panel, distance and permit.</p>
@@ -209,32 +206,32 @@
         </div>
 
         <div class="more-services">
-          <h3 class="more-title" data-reveal>Everything else we do</h3>
+          <h3 class="more-title">Everything else we do</h3>
           <ul class="service-list" role="list">
-            <li class="service-item" data-reveal>
+            <li class="service-item">
               <h4 class="service-name"><svg class="icon" aria-hidden="true"><use href="#i-light"/></svg> Lighting</h4>
               <p>Recessed, under-cabinet, landscape and ceiling fans. A fan hangs from a box listed for fan support.</p>
             </li>
-            <li class="service-item" data-reveal>
+            <li class="service-item">
               <h4 class="service-name"><svg class="icon" aria-hidden="true"><use href="#i-outlet"/></svg> Outlets, GFCI and AFCI, dedicated circuits</h4>
               <p>GFCIs protect people from shock. AFCIs help prevent fires caused by arcing wires. A dedicated circuit feeds one thing, like a freezer or a shop tool.</p>
             </li>
-            <li class="service-item" data-reveal>
+            <li class="service-item">
               <h4 class="service-name"><svg class="icon" aria-hidden="true"><use href="#i-generator"/></svg> Standby generators and transfer switches</h4>
               <p>A generator connects through a transfer switch, never a wall outlet.</p>
             </li>
-            <li class="service-item" data-reveal>
+            <li class="service-item">
               <h4 class="service-name"><svg class="icon" aria-hidden="true"><use href="#i-wire"/></svg> Rewiring, inspection and code corrections</h4>
               <p>Aluminum wiring from 1965 to the mid-1970s gets repaired with CPSC-recommended connectors, never twist-on wire nuts. Inspection report items get fixed, permitted and inspected.</p>
             </li>
-            <li class="service-item" data-reveal>
+            <li class="service-item">
               <h4 class="service-name"><svg class="icon" aria-hidden="true"><use href="#i-store"/></svg> Light commercial finish-out</h4>
               <p>Wiring the inside of a commercial space for a tenant once the shell building is done.</p>
             </li>
-            <li class="service-item service-item--cta" data-reveal>
+            <li class="service-item service-item--cta">
               <h4 class="service-name">Not sure what you need?</h4>
               <!-- PLACEHOLDER: upfront pricing promise -->
-              <p>Book a troubleshooting visit. We&rsquo;ll tell you what we find and what it costs before any work starts <span class="tag">Sample</span>.</p>
+              <p>Book a troubleshooting visit. We&rsquo;ll tell you what we find and what it costs before any work <span class="nowrap">starts <span class="tag">Sample</span></span>.</p>
               <a class="btn btn--ghost" href="#book">Book a visit <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
             </li>
           </ul>
@@ -242,20 +239,19 @@
       </div>
     </section>
 
-    <!-- 3. EMERGENCY GUIDE -->
+    <!-- EMERGENCY GUIDE -->
     <section class="section guide" id="emergency" aria-labelledby="guide-title">
       <div class="container guide-layout">
-        <div class="guide-intro" data-reveal>
-          <p class="eyebrow">Quick guide</p>
+        <div class="guide-intro">
           <h2 id="guide-title" class="section-title">Is it an emergency?</h2>
           <p class="section-lede">Start at the top. The first match is what to do.</p>
           <p class="guide-credit">Based on NFPA, Oncor and CoServ safety guidance.</p>
         </div>
 
         <ol class="tiers" role="list">
-          <li class="tier tier--911" data-reveal>
+          <li class="tier tier--911">
             <div class="tier-head">
-              <span class="tier-step" aria-hidden="true">1</span>
+              <span class="tier-mark" aria-hidden="true"><svg class="icon"><use href="#i-exit"/></svg></span>
               <h3 class="tier-title">Call 911 now and get out</h3>
             </div>
             <ul class="tier-list">
@@ -263,9 +259,9 @@
               <li>A downed or low power line: stay away, keep others and pets away, call 911, then your utility.</li>
             </ul>
           </li>
-          <li class="tier tier--now" data-reveal>
+          <li class="tier tier--now">
             <div class="tier-head">
-              <span class="tier-step" aria-hidden="true">2</span>
+              <span class="tier-mark" aria-hidden="true"><svg class="icon"><use href="#i-stop"/></svg></span>
               <h3 class="tier-title">Stop using it and call a licensed electrician now</h3>
             </div>
             <ul class="tier-list">
@@ -274,11 +270,11 @@
               <li>Warm, discolored, cracked or broken outlets or switches.</li>
               <li>A tingle or shock when you touch an appliance, sink or fixture.</li>
             </ul>
-            <a class="tier-action" href="tel:+14695550132"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg> Call our 24/7 line <span class="tag">Sample</span></a>
+            <a class="tier-action" href="tel:+14695550132"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg> Call our 24/7 <span class="nowrap">line <span class="tag">Sample</span></span></a>
           </li>
-          <li class="tier tier--soon" data-reveal>
+          <li class="tier tier--soon">
             <div class="tier-head">
-              <span class="tier-step" aria-hidden="true">3</span>
+              <span class="tier-mark" aria-hidden="true"><svg class="icon"><use href="#i-calendar"/></svg></span>
               <h3 class="tier-title">Book an electrician soon</h3>
             </div>
             <ul class="tier-list">
@@ -287,9 +283,9 @@
             </ul>
             <a class="tier-action" href="#book"><svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg> Book online</a>
           </li>
-          <li class="tier tier--out" data-reveal>
+          <li class="tier tier--out">
             <div class="tier-head">
-              <span class="tier-step" aria-hidden="true">4</span>
+              <span class="tier-mark" aria-hidden="true"><svg class="icon"><use href="#i-breaker"/></svg></span>
               <h3 class="tier-title">Power out?</h3>
             </div>
             <ul class="tier-list">
@@ -301,11 +297,10 @@
       </div>
     </section>
 
-    <!-- 4. EV + GENERATORS -->
+    <!-- EV + GENERATORS -->
     <section class="section feature" id="ev-generators" aria-labelledby="feature-title">
       <div class="container">
-        <div class="section-intro section-intro--on-dark" data-reveal>
-          <p class="eyebrow">EV chargers and backup power</p>
+        <div class="section-intro section-intro--on-dark">
           <h2 id="feature-title" class="section-title">EV chargers and generator hookups, done to current electrical code.</h2>
         </div>
 
@@ -322,13 +317,12 @@
             <div class="feature-body">
               <h3 class="feature-title">Level 2 EV charging at home</h3>
               <p class="feature-lede">Level 2 runs on 240 volts, the same as a dryer or oven, and adds roughly 25 to 40 miles of range per hour of charging.</p>
-              <ul class="checklist">
-                <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> <span>It needs its own dedicated circuit.</span></li>
-                <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> <span>The circuit is sized at 125% of the charger&rsquo;s rating, so a 40-amp charger needs a 50-amp circuit.</span></li>
-                <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> <span>Plug-in (NEMA 14-50 outlet) or hardwired. Chargers of 48 amps and up are usually hardwired.</span></li>
-                <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> <span>Outdoor installation is safe with outdoor-rated equipment.</span></li>
-                <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> <span>100-amp service is often enough. A load calculation tells you whether your panel can handle it or needs an upgrade.</span></li>
-              </ul>
+              <dl class="fact-list">
+                <div><dt>Circuit</dt><dd>Its own dedicated circuit, sized at 125% of the charger&rsquo;s rating. A 40-amp charger needs a 50-amp circuit.</dd></div>
+                <div><dt>Plug or hardwire</dt><dd>Plug-in (NEMA 14-50 outlet) or hardwired. Chargers of 48 amps and up are usually hardwired.</dd></div>
+                <div><dt>Outdoors</dt><dd>Safe with outdoor-rated equipment.</dd></div>
+                <div><dt>Your panel</dt><dd>100-amp service is often enough. A load calculation tells you whether your panel can handle it or needs an upgrade.</dd></div>
+              </dl>
             </div>
           </article>
 
@@ -373,10 +367,10 @@
             <div class="feature-body">
               <h3 class="feature-title">Standby generators and transfer switches</h3>
               <p class="feature-lede">A generator must connect through a transfer switch, never a wall outlet. Without one, power can backfeed into utility lines and seriously injure or kill line workers.</p>
-              <ul class="checklist">
-                <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> <span>With an automatic transfer switch, the generator is sized to carry everything the switch transfers, unless the loads are managed.</span></li>
-                <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> <span>We pull permits when the city requires them.</span></li>
-              </ul>
+              <dl class="fact-list">
+                <div><dt>Sizing</dt><dd>With an automatic transfer switch, the generator is sized to carry everything the switch transfers, unless the loads are managed.</dd></div>
+                <div><dt>Permit</dt><dd>We pull permits when the city requires them.</dd></div>
+              </dl>
               <a class="btn btn--light" href="#book">Plan a project <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
             </div>
           </article>
@@ -384,10 +378,10 @@
       </div>
     </section>
 
-    <!-- 5. WHY CHOOSE US -->
+    <!-- WHAT TO EXPECT (licensed, upfront pricing, clean job sites) -->
     <section class="section why" aria-labelledby="why-title">
       <div class="container why-grid">
-        <div class="why-media" data-reveal>
+        <div class="why-media">
           <img
             src="../assets/img/recessed-lighting-kitchen-02-1600.webp"
             srcset="../assets/img/recessed-lighting-kitchen-02-800.webp 800w, ../assets/img/recessed-lighting-kitchen-02-1600.webp 1600w"
@@ -397,36 +391,35 @@
         </div>
 
         <div class="why-copy">
-          <div class="section-intro" data-reveal>
-            <p class="eyebrow">Why homeowners call us</p>
-            <h2 id="why-title" class="section-title">Licensed, upfront, and tidy.</h2>
-            <p class="section-lede">Texas requires electrical work to be done by licensed electricians, with narrow exceptions. Here&rsquo;s what you can expect from us.</p>
+          <div class="section-intro">
+            <h2 id="why-title" class="section-title">Licensed in Texas, and you see the price first.</h2>
+            <p class="section-lede">Texas requires electrical work to be done by licensed electricians, with narrow exceptions. Here&rsquo;s what else comes with the visit.</p>
           </div>
 
           <!-- PLACEHOLDER: licensed & insured, license number, master electrician, upfront pricing, clean job sites, warranty, same-day, financing -->
           <ul class="why-list" role="list">
-            <li class="why-item" data-reveal>
-              <h3 class="why-title"><svg class="icon" aria-hidden="true"><use href="#i-badge"/></svg> <span>Licensed &amp; insured <span class="tag">Sample</span></span></h3>
-              <p>TECL 00000 <span class="tag">Sample</span>, with a Master Electrician of record <span class="tag">Sample</span>. Anyone can look up a Texas contractor&rsquo;s license on the <a href="https://www.tdlr.texas.gov/LicenseSearch/" rel="noopener" target="_blank">TDLR license search<span class="visually-hidden"> (opens in a new tab)</span></a>.</p>
+            <li class="why-item">
+              <h3 class="why-title">Licensed &amp; <span class="nowrap">insured <span class="tag">Sample</span></span></h3>
+              <p><span class="nowrap">TECL 00000 <span class="tag">Sample</span></span>, with a Master Electrician of <span class="nowrap">record <span class="tag">Sample</span></span>. Anyone can look up a Texas contractor&rsquo;s license on the <a href="https://www.tdlr.texas.gov/LicenseSearch/" rel="noopener" target="_blank">TDLR license search<span class="visually-hidden"> (opens in a new tab)</span></a>.</p>
             </li>
-            <li class="why-item" data-reveal>
-              <h3 class="why-title"><svg class="icon" aria-hidden="true"><use href="#i-tag"/></svg> <span>You see the price before we start <span class="tag">Sample</span></span></h3>
+            <li class="why-item">
+              <h3 class="why-title">You see the price before we <span class="nowrap">start <span class="tag">Sample</span></span></h3>
               <p>No guessing before the work starts.</p>
             </li>
-            <li class="why-item" data-reveal>
-              <h3 class="why-title"><svg class="icon" aria-hidden="true"><use href="#i-home"/></svg> <span>Clean job sites <span class="tag">Sample</span></span></h3>
+            <li class="why-item">
+              <h3 class="why-title">Clean job <span class="nowrap">sites <span class="tag">Sample</span></span></h3>
               <p>We leave your home the way we found it, minus the problem.</p>
             </li>
-            <li class="why-item" data-reveal>
-              <h3 class="why-title"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> <span>1-year workmanship warranty <span class="tag">Sample</span></span></h3>
-              <p>Covers our workmanship for a year after the job.</p>
+            <li class="why-item">
+              <h3 class="why-title">1-year workmanship <span class="nowrap">warranty <span class="tag">Sample</span></span></h3>
+              <p>Ask us what it covers.</p>
             </li>
-            <li class="why-item" data-reveal>
-              <h3 class="why-title"><svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg> <span>Same-day service when booked by noon <span class="tag">Sample</span></span></h3>
+            <li class="why-item">
+              <h3 class="why-title">Same-day service when booked by <span class="nowrap">noon <span class="tag">Sample</span></span></h3>
               <p>Book online and pick a time window.</p>
             </li>
-            <li class="why-item" data-reveal>
-              <h3 class="why-title"><svg class="icon" aria-hidden="true"><use href="#i-badge-dollar"/></svg> <span>Financing available <span class="tag">Sample</span></span></h3>
+            <li class="why-item">
+              <h3 class="why-title">Financing <span class="nowrap">available <span class="tag">Sample</span></span></h3>
               <p>Ask about it when you book.</p>
             </li>
           </ul>
@@ -434,32 +427,31 @@
       </div>
     </section>
 
-    <!-- 6. REVIEWS -->
+    <!-- REVIEWS -->
     <section class="section reviews" id="reviews" aria-labelledby="reviews-title">
       <div class="container">
-        <div class="section-intro" data-reveal>
-          <p class="eyebrow">Reviews</p>
+        <div class="section-intro">
           <h2 id="reviews-title" class="section-title">What people tend to notice.</h2>
           <p class="section-lede">These are sample reviews written for this preview.</p>
         </div>
 
         <!-- PLACEHOLDER: all three reviews are samples, replace with real customer reviews -->
         <ul class="review-layout" role="list">
-          <li class="review review--feature" data-reveal>
+          <li class="review review--feature">
             <span class="tag tag--copper review-tag">Sample review</span>
             <blockquote>
               <p>&ldquo;They gave us the price before starting, pulled the permit, and explained why our panel needed the upgrade before we added an EV charger.&rdquo;</p>
             </blockquote>
             <p class="review-by">Homeowner, panel and EV charger (Sample review)</p>
           </li>
-          <li class="review" data-reveal>
+          <li class="review">
             <span class="tag tag--copper review-tag">Sample review</span>
             <blockquote>
               <p>&ldquo;Our inspection report flagged several electrical items. They quoted it fast enough for our option period and sent an itemized invoice I could forward to the buyer.&rdquo;</p>
             </blockquote>
             <p class="review-by">Real-estate agent (Sample review)</p>
           </li>
-          <li class="review" data-reveal>
+          <li class="review">
             <span class="tag tag--copper review-tag">Sample review</span>
             <blockquote>
               <p>&ldquo;Arrived in the window they gave us, wore shoe covers, fixed only what we called about, and cleaned up after.&rdquo;</p>
@@ -470,23 +462,22 @@
       </div>
     </section>
 
-    <!-- 7. SERVICE AREA + FORM -->
+    <!-- SERVICE AREA + FORM -->
     <section class="section book" id="area" aria-labelledby="area-title">
       <div class="container">
         <div class="book-grid">
-          <div class="area" data-reveal>
-            <p class="eyebrow">Service area</p>
-            <h2 id="area-title" class="section-title">Seven cities, one phone number.</h2>
+          <div class="area">
+            <h2 id="area-title" class="section-title">Where we work</h2>
             <!-- PLACEHOLDER: based in Frisco -->
-            <p class="section-lede">Based in Frisco <span class="tag">Sample</span>. We come to you in:</p>
+            <p class="section-lede">Based in <span class="nowrap">Frisco <span class="tag">Sample</span></span>. We come to you in:</p>
             <ul class="city-list" role="list">
-              <li><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg> Frisco</li>
-              <li><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg> Plano</li>
-              <li><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg> Little Elm</li>
-              <li><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg> The Colony</li>
-              <li><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg> Prosper</li>
-              <li><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg> Carrollton</li>
-              <li><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg> Lewisville</li>
+              <li>Frisco</li>
+              <li>Plano</li>
+              <li>Little Elm</li>
+              <li>The Colony</li>
+              <li>Prosper</li>
+              <li>Carrollton</li>
+              <li>Lewisville</li>
             </ul>
             <figure class="area-media">
               <img
@@ -499,9 +490,9 @@
             <p class="area-call">Rather talk it through? <a href="tel:+14695550132">(469) 555-0132</a> <span class="tag">Sample</span></p>
           </div>
 
-          <div class="form-card" id="book" data-reveal>
+          <div class="form-card" id="book">
             <h2 class="form-title">Book online</h2>
-            <p class="form-lede">Pick a service and a time window. You&rsquo;ll see the price before we start <span class="tag">Sample</span>.</p>
+            <p class="form-lede">Pick a service and a time window. You&rsquo;ll see the price before we <span class="nowrap">start <span class="tag">Sample</span></span>.</p>
 
             <!-- reCAPTCHA v3 placeholder: load https://www.google.com/recaptcha/api.js?render=SITE_KEY at launch -->
             <form class="form" id="booking-form" action="#" method="post" novalidate>
@@ -587,11 +578,11 @@
     <div class="container footer-grid">
       <div class="footer-brand">
         <p class="wordmark wordmark--footer"><span class="wordmark-name">Ampwell <span>Electric</span></span></p>
-        <p>Ampwell Electric · TECL 00000 <span class="tag tag--on-dark">Sample</span></p>
+        <p>Ampwell Electric · <span class="nowrap">TECL 00000 <span class="tag tag--on-dark">Sample</span></span></p>
         <p>Residential and light commercial electrical contractor.</p>
       </div>
       <div>
-        <h2 class="footer-heading">Contact <span class="tag tag--on-dark">Sample</span></h2>
+        <h2 class="footer-heading"><span class="nowrap">Contact <span class="tag tag--on-dark">Sample</span></span></h2>
         <ul class="footer-list" role="list">
           <li><a href="tel:+14695550132">(469) 555-0132</a></li>
           <li><a href="mailto:hello@example.com">hello@example.com</a></li>
